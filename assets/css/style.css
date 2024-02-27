@@ -1,0 +1,16 @@
+:root {
+    --cor1: #0CAADC;
+    --cor2: #11B5E4;
+    --cor3: #1481BA;
+    --cor4: #034748;
+    --cor5: #001021;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor5);
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece Game</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav justify-content-center">
+            <div class="nav-item">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/images/logo.png" alt="Logo" width="120" height="60"
+                        class="d-inline-block align-text-top" onclick="clearRandons()">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Atributo</th>
+                    <th scope="col">Personagem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><button class="btn btn-dark" onclick="updateValue('paragraf1')">🎲</button></th>
+                    <td>Força</td>
+                    <td>
+                        <p id="paragraf1">?</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><button class="btn btn-dark" onclick="updateValue('paragraf2')">🎲</button></th>
+                    <td>Resistência</td>
+                    <td>
+                        <p id="paragraf2">?</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><button class="btn btn-dark" onclick="updateValue('paragraf3')">🎲</button></th>
+                    <td>Velocidade</td>
+                    <td>
+                        <p id="paragraf3">?</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><button class="btn btn-dark" onclick="updateValue('paragraf4')">🎲</button></th>
+                    <td>Q.I.</td>
+                    <td>
+                        <p id="paragraf4">?</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><button class="btn btn-dark" onclick="updateValue('paragraf5')">🎲</button></th>
+                    <td>Haki do Armamento</td>
+                    <td>
+                        <p id="paragraf5">?</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><button class="btn btn-dark" onclick="updateValue('paragraf6')">🎲</button></th>
+                    <td>Haki da Observação</td>
+                    <td>
+                        <p id="paragraf6">?</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><button class="btn btn-dark" onclick="updateValue('paragraf7')">🎲</button></th>
+                    <td>Haki do Rei</td>
+                    <td>
+                        <p id="paragraf7">?</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><button class="btn btn-dark" onclick="updateValue('paragraf8')">🎲</button></th>
+                    <td>Raça</td>
+                    <td>
+                        <p id="paragraf8">?</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><button class="btn btn-dark" onclick="updateValue('paragraf9')">🎲</button></th>
+                    <td>Estilo de Luta/Arma</td>
+                    <td>
+                        <p id="paragraf9">?</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><button class="btn btn-dark" onclick="updateValue('paragraf0')">🎲</button></th>
+                    <td>Akuma no Mi</td>
+                    <td>
+                        <p id="paragraf0">?</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 One Piece Game. All rights reserved for <a name="contato" target="_blank"
+                href="https://twitter.com/Mateus_CohuzEr" style="text-decoration: none;">@Cohuzer</a>.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="/assets/js/character_list.js"></script>
+    <script>
+        function updateValue(target) {
+            var p = document.getElementById(target);
+            var old = p.textContent
+            var newvar = getRandomItem();
+            while (newvar == old){
+                newvar = getRandomItem();
+            }
+            p.textContent = newvar;
+        }
+    </script>
+    <script>
+        function clearRandons() {
+            for (var i = 0; i < 10; i++) {
+                var string = "paragraf" + i;
+                var x = document.getElementById(string);
+                x.textContent = "?";
+            }
+        }
+    </script>
+</body>
+
+</html>

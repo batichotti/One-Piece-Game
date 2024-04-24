@@ -6,6 +6,10 @@
     --cor5: #001021;
 }
 
+body{
+    background-color: var(--cor1);
+}
+
 ul{
     list-style-type: none;
 }

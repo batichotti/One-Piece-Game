@@ -14,7 +14,6 @@ The original game gained popularity as a TikTok trend game ([@romansdsensei](htt
 
 ---
 
-
 ## 📚 Languages & Technologies Used
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)

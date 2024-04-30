@@ -4,7 +4,7 @@
 
 ## 🥸 The Original Game
 
-The original game gained popularity as a TikTok trend game ([@romansdsensei](https://www.tiktok.com/@romansdsensei/video/7228973475929525547?lang=pt-BR)).
+The original game gained popularity as a TikTok trend game (<a target='_blank' href='https://www.tiktok.com/@romansdsensei/video/7228973475929525547?lang=pt-BR'>@romansdsensei</a>).
 
 ### 🎮 How to Play
 
